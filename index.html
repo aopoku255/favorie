@@ -73,9 +73,9 @@
             </li>
             <li><a href="#about" class="">About</a></li>
             <li><a href="#menu" class="">Menu</a></li>
-            <li><a href="#events" class="">Events</a></li>
+            <!-- <li><a href="#events" class="">Events</a></li>
             <li><a href="#chefs" class="">Chefs</a></li>
-            <li><a href="#gallery" class="">Gallery</a></li>
+            <li><a href="#gallery" class="">Gallery</a></li> -->
             <!-- <li class="dropdown">
               <a href="#"
                 ><span>Dropdown</span>
@@ -120,14 +120,13 @@
             class="row gy-4 justify-content-center justify-content-lg-between"
           >
             <div
-              class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center"
+              class="col-lg-5 order-2 order-lg-1 d-flex flex-column gap-4 justify-content-center"
             >
               <h1 data-aos="fade-up">
                 Serving your favorite doses of happiness all day, everyday
               </h1>
               <p data-aos="fade-up" data-aos-delay="100">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur, aut.
+                favorie! Everyone's favorite
               </p>
               <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                 <a href="#book-a-table" class="btn-get-started">Explore</a>
@@ -145,7 +144,7 @@
               <img src="assets/img/favicon.png" class="img-fluid" alt="" />
               <img
                 src="assets/img/ice-cream.png"
-                class="img-fluid animated icecreams"
+                class="img-fluid icecreams"
                 alt=""
               />
             </div>
@@ -155,63 +154,45 @@
       <!-- /Hero Section -->
 
       <!-- About Section -->
-      <!-- <section id="about" class="about section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>About Us<br /></h2>
+      <!-- <section id="wall" class="about section">
+        <div class="container">
+          <img src="./assets/img/wall.jpg" alt="" class="img-fluid" />
+        </div>
+      </section> -->
+
+      <section id="about" class="about section">
+        <div class="container menu-title my-5" data-aos="fade-up">
+          <!-- <h2>Our Menu</h2> -->
           <p>
-            <span>Learn More</span>
-            <span class="description-title">About Us</span>
+            <span>About Us</span>
+            <!-- <span class="description-title">Yummy Menu</span> -->
           </p>
         </div>
 
         <div class="container">
           <div class="row gy-4">
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="" />
-              <div class="book-a-table">
-                <h3>Book a Table</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
+              <img src="assets/img/wall.jpg" class="img-fluid mb-4" alt="" />
             </div>
             <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
-              <div class="content ps-0 ps-lg-5">
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <ul>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i>
-                    <span
-                      >Ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat.</span
-                    >
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i>
-                    <span
-                      >Duis aute irure dolor in reprehenderit in voluptate
-                      velit.</span
-                    >
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill"></i>
-                    <span
-                      >Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate
-                      trideta storacalaperda mastiro dolore eu fugiat nulla
-                      pariatur.</span
-                    >
-                  </li>
-                </ul>
+              <div class="content ps-0 ps-lg-5 text-secondary">
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident
+                  Steve Jobs once said, If you want to make everyone happy,
+                  don’t become a leader, sell ice cream. We took that statement
+                  too much to heart. We have always wanted to make the people
+                  around us happy, and what better way to do that than to sell
+                  ice cream?, with all the goodies of desserts?
                 </p>
-
-                <div class="position-relative mt-4">
+                <p>
+                  Doing that, we wanted to become your favorite, so we decided
+                  to call ourselves “favorie”.
+                </p>
+                <p>
+                  Taking baby steps, we’ve moved from a stand, to a kiosk and
+                  now, to a shop, with a lot underway.
+                </p>
+                <p>Thank you for making us your favorite.</p>
+                <div class="position-relative mt-4" style="height: 4rem">
                   <img src="assets/img/about-2.jpg" class="img-fluid" alt="" />
                   <a
                     href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
@@ -222,7 +203,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /About Section -->
 
       <!-- Why Us Section -->
@@ -438,78 +419,97 @@
               </div> -->
 
               <div class="row gy-5">
-                <div class="col-lg-4 menu-item">
-                  <a href="assets/img/menu/icecream.png" class="glightbox"
-                    ><img
+                <!-- Card Wrapper -->
+                <div class="col-lg-4 menu-item d-flex flex-column">
+                  <a href="assets/img/menu/icecream.png" class="glightbox">
+                    <img
                       src="assets/img/menu/icecream.png"
                       class="menu-img img-fluid"
                       alt=""
                       width="300"
-                  /></a>
-                  <h4>Ice cream</h4>
-                  <p class="ingredients">Flex Strawberry/ Vanilla</p>
-                  <p class="price">₵ 50.00</p>
+                    />
+                  </a>
+                  <div class="mt-auto">
+                    <h4>Ice cream</h4>
+                    <p class="ingredients">Flex Strawberry/ Vanilla</p>
+                    <p class="price">₵ 50.00</p>
+                  </div>
                 </div>
 
-                <div class="col-lg-4 menu-item">
-                  <a href="assets/img/menu/cakeincup.png" class="glightbox"
-                    ><img
+                <div class="col-lg-4 menu-item d-flex flex-column">
+                  <a href="assets/img/menu/cakeincup.png" class="glightbox">
+                    <img
                       src="assets/img/menu/cakeincup.png"
                       class="menu-img img-fluid"
                       alt=""
-                  /></a>
-                  <h4>Cake in cup</h4>
-                  <p class="ingredients">Chocolate</p>
-                  <p class="price">₵ 20.00</p>
+                    />
+                  </a>
+                  <div class="mt-auto">
+                    <h4>Cake in cup</h4>
+                    <p class="ingredients">Chocolate</p>
+                    <p class="price">₵ 20.00</p>
+                  </div>
                 </div>
 
-                <div class="col-lg-4 menu-item">
-                  <a href="assets/img/menu/cupcake.png" class="glightbox"
-                    ><img
+                <div class="col-lg-4 menu-item d-flex flex-column">
+                  <a href="assets/img/menu/cupcake.png" class="glightbox">
+                    <img
                       src="assets/img/menu/cupcake.png"
                       class="menu-img img-fluid"
                       alt=""
-                  /></a>
-                  <h4>Cupcake</h4>
-                  <p class="ingredients">Strawberry/ Vanilla</p>
-                  <p class="price">₵ 20.00</p>
+                    />
+                  </a>
+                  <div class="mt-auto">
+                    <h4>Cupcake</h4>
+                    <p class="ingredients">Strawberry/ Vanilla</p>
+                    <p class="price">₵ 20.00</p>
+                  </div>
                 </div>
 
-                <div class="col-lg-4 menu-item">
-                  <a href="assets/img/menu/waffles.png" class="glightbox"
-                    ><img
+                <div class="col-lg-4 menu-item d-flex flex-column">
+                  <a href="assets/img/menu/waffles.png" class="glightbox">
+                    <img
                       src="assets/img/menu/waffles.png"
                       class="menu-img img-fluid"
                       alt=""
-                  /></a>
-                  <h4>Waffles</h4>
-                  <p class="ingredients">2 piece Waffle with toppings</p>
-                  <p class="price">₵40.00</p>
+                    />
+                  </a>
+                  <div class="mt-auto">
+                    <h4>Waffles</h4>
+                    <p class="ingredients">2 piece Waffle with toppings</p>
+                    <p class="price">₵40.00</p>
+                  </div>
                 </div>
 
-                <div class="col-lg-4 menu-item">
-                  <a href="assets/img/menu/nonut.png" class="glightbox"
-                    ><img
+                <div class="col-lg-4 menu-item d-flex flex-column">
+                  <a href="assets/img/menu/nonut.png" class="glightbox">
+                    <img
                       src="assets/img/menu/nonut.png"
                       class="menu-img img-fluid"
                       alt=""
-                  /></a>
-                  <h4>Donuts</h4>
-                  <p class="ingredients">2 piece donuts</p>
-                  <p class="price">₵ 20.00</p>
+                    />
+                  </a>
+                  <div class="mt-auto">
+                    <h4>Donuts</h4>
+                    <p class="ingredients">2 piece donuts</p>
+                    <p class="price">₵ 20.00</p>
+                  </div>
                 </div>
 
-                <div class="col-lg-4 menu-item">
-                  <a href="assets/img/menu/popcorn.png" class="glightbox"
-                    ><img
+                <div class="col-lg-4 menu-item d-flex flex-column">
+                  <a href="assets/img/menu/popcorn.png" class="glightbox">
+                    <img
                       src="assets/img/menu/popcorn.png"
                       class="menu-img img-fluid"
                       alt=""
                       width="270"
-                  /></a>
-                  <h4>Popcorn</h4>
-                  <p class="ingredients">Any flavour</p>
-                  <p class="price">₵ 30.00</p>
+                    />
+                  </a>
+                  <div class="mt-auto">
+                    <h4>Popcorn</h4>
+                    <p class="ingredients">Any flavour</p>
+                    <p class="price">₵ 30.00</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -838,15 +838,13 @@
                         <p>
                           <i class="bi bi-quote quote-icon-left"></i>
                           <span
-                            >Proin iaculis purus consequat sem cure digni ssim
-                            donec porttitora entum suscipit rhoncus. Accusantium
-                            quam, ultricies eget id, aliquam eget nibh et.
-                            Maecen aliquam, risus at semper.</span
+                            >Haven't enjoyed such a good icecream like than one
+                            I enjoyed from favorie</span
                           >
                           <i class="bi bi-quote quote-icon-right"></i>
                         </p>
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
+                        <h3>Andrews Opoku</h3>
+                        <!-- <h4>Ceo &amp; Founder</h4> -->
                         <div class="stars">
                           <i class="bi bi-star-fill"></i
                           ><i class="bi bi-star-fill"></i
@@ -858,7 +856,7 @@
                     </div>
                     <div class="col-lg-2 text-center">
                       <img
-                        src="assets/img/testimonials/testimonials-1.jpg"
+                        src="assets/img/testimonials/"
                         class="img-fluid testimonial-img"
                         alt=""
                       />
@@ -868,7 +866,7 @@
               </div>
               <!-- End testimonial item -->
 
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testimonial-item">
                   <div class="row gy-4 justify-content-center">
                     <div class="col-lg-6">
@@ -903,10 +901,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- End testimonial item -->
 
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testimonial-item">
                   <div class="row gy-4 justify-content-center">
                     <div class="col-lg-6">
@@ -941,10 +939,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- End testimonial item -->
 
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testimonial-item">
                   <div class="row gy-4 justify-content-center">
                     <div class="col-lg-6">
@@ -979,7 +977,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- End testimonial item -->
             </div>
             <div class="swiper-pagination"></div>
@@ -1081,8 +1079,7 @@
       <!-- /Events Section -->
 
       <!-- Chefs Section -->
-      <section id="chefs" class="chefs section">
-        <!-- Section Title -->
+      <!-- <section id="chefs" class="chefs section">
         <div class="container section-title" data-aos="fade-up">
           <h2>chefs</h2>
           <p>
@@ -1090,7 +1087,6 @@
             <span class="description-title">Proffesional Chefs<br /></span>
           </p>
         </div>
-        <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
@@ -1124,7 +1120,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Chef Team Member -->
+            
 
             <div
               class="col-lg-4 d-flex align-items-stretch"
@@ -1156,7 +1152,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Chef Team Member -->
+            
 
             <div
               class="col-lg-4 d-flex align-items-stretch"
@@ -1188,20 +1184,20 @@
                 </div>
               </div>
             </div>
-            <!-- End Chef Team Member -->
+            
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- /Chefs Section -->
 
       <!-- Book A Table Section -->
       <section id="book-a-table" class="book-a-table section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Book A Table</h2>
+        <div class="container menu-title my-5" data-aos="fade-up">
+          <!-- <h2>Our Menu</h2> -->
           <p>
-            <span>Book Your</span>
-            <span class="description-title">Stay With Us<br /></span>
+            <span>Book A Table</span>
+            <!-- <span class="description-title">Yummy Menu</span> -->
           </p>
         </div>
         <!-- End Section Title -->
@@ -1210,7 +1206,7 @@
           <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
             <div
               class="col-lg-4 reservation-img"
-              style="background-image: url(assets/img/reservation.jpg)"
+              style="background-image: url(assets/img/menu/popcorn.png)"
             ></div>
 
             <div
@@ -1314,8 +1310,8 @@
       <!-- /Book A Table Section -->
 
       <!-- Gallery Section -->
-      <section id="gallery" class="gallery section light-background">
-        <!-- Section Title -->
+      <!-- <section id="gallery" class="gallery section light-background">
+       
         <div class="container section-title" data-aos="fade-up">
           <h2>Gallery</h2>
           <p>
@@ -1323,7 +1319,7 @@
             <span class="description-title">Our Gallery</span>
           </p>
         </div>
-        <!-- End Section Title -->
+       
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper init-swiper">
@@ -1450,7 +1446,7 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- /Gallery Section -->
 
       <!-- Contact Section -->
@@ -1469,7 +1465,7 @@
           <div class="mb-5">
             <iframe
               style="width: 100%; height: 400px"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.790443317469!2d-1.5658154264945927!3d6.672867621412632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb95b09e004b97%3A0xcfef7dcfcf76769c!2sFavorie%20Foods!5e0!3m2!1sen!2sgh!4v1735408101800!5m2!1sen!2sgh"
               frameborder="0"
               allowfullscreen=""
             ></iframe>
@@ -1485,8 +1481,9 @@
               >
                 <i class="icon bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h3>Locations</h3>
+                  <p>Nana Adoma Hostel, Engineering Gate.</p>
+                  <p>New Site, Opposite Evandy Hostel</p>
                 </div>
               </div>
             </div>
@@ -1501,7 +1498,10 @@
                 <i class="icon bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <p>
+                    <a href="tel:0539026605 ">0539026605</a>/
+                    <a href="tel:0504075802">0504075802</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -1516,7 +1516,7 @@
                 <i class="icon bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <p>contact@favoriefoods.com</p>
                 </div>
               </div>
             </div>
@@ -1532,7 +1532,7 @@
                 <div>
                   <h3>Opening Hours<br /></h3>
                   <p>
-                    <strong>Mon-Sat:</strong> 11AM - 23PM;
+                    <strong>Mon-Sat:</strong> 9AM - 11PM;
                     <strong>Sunday:</strong> Closed
                   </p>
                 </div>
@@ -1612,9 +1612,9 @@
           <div class="col-lg-3 col-md-6 d-flex">
             <i class="bi bi-geo-alt icon"></i>
             <div class="address">
-              <h4>Address</h4>
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
+              <h4>Locations</h4>
+              <p>Nana Adoma Hostel, Engineering Gate.</p>
+              <p>New Site, Opposite Evandy Hostel</p>
               <p></p>
             </div>
           </div>
@@ -1624,8 +1624,10 @@
             <div>
               <h4>Contact</h4>
               <p>
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span><br />
-                <strong>Email:</strong> <span>info@example.com</span><br />
+                <strong>Phone:</strong> <span>0539026605\ 0504075802</span
+                ><br />
+                <strong>Email:</strong> <span>contact@favoriefoods.com</span
+                ><br />
               </p>
             </div>
           </div>
@@ -1635,7 +1637,7 @@
             <div>
               <h4>Opening Hours</h4>
               <p>
-                <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br />
+                <strong>Mon-Sat:</strong> <span>9AM - 11PM</span><br />
                 <strong>Sunday</strong>: <span>Closed</span>
               </p>
             </div>
@@ -1644,10 +1646,24 @@
           <div class="col-lg-3 col-md-6">
             <h4>Follow Us</h4>
             <div class="social-links d-flex">
-              <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a
+                href="https://x.com/favoriefoods"
+                target="_blank"
+                class="twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://snapchat.com/t/StzhqvTn"
+                target="_blank"
+                class="facebook"
+                ><i class="bi bi-snapchat"></i
+              ></a>
+              <a
+                href="https://instagram.com/favorie_"
+                target="_blank"
+                class="instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
             </div>
           </div>
         </div>

@@ -23,11 +23,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Visby Round Light';
+  src: url('../fonts/VisbyRoundCF-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Amatic SC",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --default-font: 'Visby Round', "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: 'Visby Round', "Amatic SC",  sans-serif;
+  --nav-font: 'Visby Round', "Inter",  sans-serif;
   
 }
 
@@ -357,7 +363,6 @@ h6 {
     color: white;
     font-size: 16px;
     padding: 0 2px;
-    font-family: 'Visby Round Bold';
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -365,6 +370,7 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
+    font-family: 'Visby Round Light';
   }
 
   .navmenu a i,
@@ -373,6 +379,7 @@ h6 {
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
+    
   }
 
   .navmenu>ul>li>a:before {
@@ -399,6 +406,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: white;
+    font-family: 'Visby Round Bold';
   }
 
   .navmenu .dropdown ul {
@@ -848,6 +856,8 @@ section,
   color: white;
   font-family: 'Visby Round Bold';
   min-width: 36rem;
+  line-height: 3rem;
+  letter-spacing: -0.05em;
 }
 
 .hero p {
@@ -856,6 +866,7 @@ section,
   font-size: 20px;
   font-weight: 400;
   color: white;
+  font-family: 'Visby Round Light';
 }
 
 .hero .btn-get-started {
@@ -875,6 +886,25 @@ section,
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+
+.hero-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero .icecreams{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -7rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero .btn-watch-video {
@@ -905,14 +935,26 @@ section,
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-.hero .icecreams{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -7rem;
-  bottom: 0;
-}
 
+
+@media (max-width:567px) {
+  .hero h1{
+    min-width: 100%;
+    text-align: center;
+  }
+  .hero p{
+    text-align: center;
+  }
+  .hero .btn-get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .hero .icecreams{
+    top: -4.5rem;
+  }
+}
 
 
 @media (max-width: 640px) {
@@ -1000,7 +1042,10 @@ section,
 .about .pulsating-play-btn {
   position: absolute;
   left: calc(50% - 47px);
-  top: calc(50% - 47px);
+  /* top: calc(50% - 47px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------
@@ -1232,6 +1277,7 @@ section,
   text-align-last: center;
 }
 
+
 .menu .tab-content .menu-item .menu-img {
   padding: 0 60px;
   margin-bottom: 15px;
@@ -1253,7 +1299,13 @@ section,
 .menu .tab-content .menu-item .price {
   font-size: 24px;
   font-weight: 700;
-  color: var(--accent-color);
+  color: white;
+  background-color: var(--main-red);
+  display: block;
+  border-radius: 4px;
+  width: 50%;
+  margin: auto;
+  padding: 0.5rem 0;
 }
 
 /*--------------------------------------------------------------
@@ -1274,6 +1326,9 @@ section,
   border-radius: 50%;
   border: 4px solid var(--background-color);
   margin: 0 auto;
+  width: 8rem;
+  height: 8rem;
+  background-color: var(--main-orange);
 }
 .testimonials p{
   font-family: 'Visby Round Bold';
