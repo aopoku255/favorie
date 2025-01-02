@@ -60,6 +60,19 @@
   --nav-dropdown-hover-color: #ce1212; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
+
+::selection {
+  background-color: var(--main-red); /* Change this to your desired background color */
+  color: white; /* Change this to your desired text color */
+}
+
+/* For Firefox-specific compatibility */
+::-moz-selection {
+  background-color:var(--main-red);
+  color: white;
+}
+
+
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 .main-red{
   background-color: var(--main-red);
@@ -1329,6 +1342,7 @@ section,
   width: 8rem;
   height: 8rem;
   background-color: var(--main-orange);
+  object-fit: cover;
 }
 .testimonials p{
   font-family: 'Visby Round Bold';
